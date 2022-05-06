@@ -1,0 +1,63 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="assets/user.svg" id="icon" alt="User Icon" height="100px" width="100px" />
+    </div>
+
+    <!-- Login Form -->
+
+    <form [formGroup]="registerForm" >
+      <input 
+      formControlName="firstName"
+      type="text"
+       id="firstName"
+       class="fadeIn second"
+       
+        name="register"
+         placeholder="FirstName">
+
+         <input 
+      formControlName="lastName"
+      type="text"
+       id="lastName"
+       class="fadeIn second"
+       
+        name="register"
+         placeholder="LastName">
+      <input 
+      formControlName="email"
+      type="text"
+       id="email" 
+       class="fadeIn third"
+       
+        name="register"
+         placeholder="Email">
+
+         <input 
+      formControlName="password"
+      type="password"
+       id="password" 
+       class="fadeIn fourth"
+       
+        name="register"
+         placeholder="Password">
+ 
+      <input type="submit" class="fadeIn fifth"  value="Register" (click)="register()" routerLink="/users">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="login">Log In</a>
+    </div>
+
+  </div>
+</div>
+

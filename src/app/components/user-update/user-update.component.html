@@ -1,0 +1,95 @@
+
+<div class="content" style="margin-top: 20px;">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">User Güncelle</h5>
+          <div class="card-body">
+            <form [formGroup]="updateForm">
+              <div class="mb-3" style="display: none;" >
+               <label for="carId">User Id</label> 
+                <div class="form-group" >
+                  <input
+                  type="number"
+                  class="form-control"
+                  formControlName="id"
+                    
+                 >
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="carId">FirstName</label> 
+                <div class="form-group" >
+                  <input
+                  type="text"
+                  class="form-control"
+                  formControlName="firstName"
+                  
+                 >
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="carId">LastName</label> 
+                <div class="form-group" >
+                  <input
+                  type="text"
+                  class="form-control"
+                  formControlName="lastName"
+                 
+                 >
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="carId">Email</label> 
+                <div class="form-group" >
+                  <input
+                  type="text"
+                  class="form-control"
+                  formControlName="email"
+                  
+                 
+                
+                 >
+                </div>
+              </div>
+              <!-- <div class="mb-3" style="display: none;">
+                <label for="carId">PasswordHash</label> 
+                <div class="form-group" >
+                  <input
+                  type="Byte"
+                  class="form-control"
+                  formControlName="passwordHash"
+                 
+                  >
+                </div>
+              </div> -->
+              <!-- <div class="mb-3" style="display: none;">
+                <label for="carId">PasswordSalt</label> 
+                <div class="form-group" >
+                  <input
+                  type="Byte"
+                  class="form-control"
+                  formControlName="passwordSalt"
+                 
+                >
+                </div>
+              </div> -->
+
+              <div class="mb-3"  style="display: none;">
+                <label for="carId">Role</label> 
+                <div class="form-group" >
+                  <input
+                  type="text"
+                  class="form-control"
+                  formControlName="role"
+                  
+                 >
+                </div>
+              </div>
+ </form>
+ </div>
+ <div class="card-footer">
+  
+  
+  <button class="btn btn-fill btn-primary"  (click)="update()">Güncelle</button>
+</div>
